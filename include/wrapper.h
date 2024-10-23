@@ -1,7 +1,11 @@
+#include <cstddef>
 #include <doca_buf.h>
 #include <doca_buf_inventory.h>
+#include <doca_comm_channel.h>
 #include <doca_ctx.h>
 #include <doca_dev.h>
 #include <doca_dma.h>
 #include <doca_mmap.h>
-#include <doca_comm_channel.h>
+#include <doca_pe.h>
+#include <doca_rdma.h>
+#include <doca_rdma_bridge.h>

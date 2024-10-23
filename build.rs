@@ -23,6 +23,7 @@ fn main() {
         // Tell cargo to invalidate the built ucx_sys whenever any of the
         // included header files changed.
         .prepend_enum_name(false)
+        .rustified_enum("doca_.*")
         // Finish the builder and generate the bindings.
         .generate()
         // Unwrap the Result and panic on failure.
