@@ -1,4 +1,3 @@
-#include <cstddef>
 #include <doca_buf.h>
 #include <doca_buf_inventory.h>
 #include <doca_comm_channel.h>
@@ -9,3 +8,4 @@
 #include <doca_pe.h>
 #include <doca_rdma.h>
 #include <doca_rdma_bridge.h>
+#include <doca_log.h>

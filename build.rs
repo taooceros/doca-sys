@@ -24,6 +24,7 @@ fn main() {
         // included header files changed.
         .prepend_enum_name(false)
         .rustified_enum("doca_.*")
+        .bitfield_enum("doca_.*_flag")
         // Finish the builder and generate the bindings.
         .generate()
         // Unwrap the Result and panic on failure.
