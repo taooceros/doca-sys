@@ -23,11 +23,16 @@ fn main() {
         // Tell cargo to invalidate the built ucx_sys whenever any of the
         // included header files changed.
         .prepend_enum_name(false)
+        .bitfield_enum("doca_.*_flag")
         .rustified_enum("doca_.*")
         // Finish the builder and generate the bindings.
         .generate()
         // Unwrap the Result and panic on failure.
         .expect("Unable to generate bindings");
+
+    // let cargo knows if wrapper.h is changed
+    println!("cargo:rerun-if-changed=include/wrapper.h");
+
 
     // Write the bindings to the $OUT_DIR/bindings.rs file.
     let out_path = PathBuf::from(env::var("OUT_DIR").unwrap());
