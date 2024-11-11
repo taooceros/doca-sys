@@ -9,3 +9,4 @@
 #include <doca_rdma.h>
 #include <doca_rdma_bridge.h>
 #include <doca_log.h>
+#include <doca_aes_gcm.h>
