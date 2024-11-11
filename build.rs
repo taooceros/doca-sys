@@ -25,6 +25,7 @@ fn main() {
         .prepend_enum_name(false)
         .bitfield_enum("doca_.*_flag")
         .rustified_enum("doca_.*")
+        .bitfield_enum("doca_.*_flag")
         // Finish the builder and generate the bindings.
         .generate()
         // Unwrap the Result and panic on failure.

@@ -46,11 +46,11 @@ pub unsafe fn doca_buf_inventory_buf_get_by_addr(
 /// Call doca_buf_dec_refcount to return the buffer to the inventory (until ref count == 0).
 ///
 /// ## Arguments
-/// * `inventory` - The DOCA Buf inventory. MUST NOT BE NULL AND MUST BE STARTED.
-/// * `mmap` - DOCA memory map structure. MUST NOT BE NULL AND MUST BE STARTED.
-/// * `data` - The start address of the data inside the buffer.
-/// * `data_len` - The length in bytes of the data.
-/// * `buf` - Doca buf allocated and initialized with args. MUST NOT BE NULL.
+/// \[in\] `inventory` - The DOCA Buf inventory. MUST NOT BE NULL AND MUST BE STARTED.
+/// \[in\] `mmap` - DOCA memory map structure. MUST NOT BE NULL AND MUST BE STARTED.
+/// \[in\] `data` - The start address of the data inside the buffer.
+/// \[in\] `data_len` - The length in bytes of the data.
+/// \[out\] `buf` - Doca buf allocated and initialized with args. MUST NOT BE NULL.
 ///
 /// ## Returns
 /// * `DOCA_SUCCESS` - in case of success.
